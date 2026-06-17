@@ -1,8 +1,3 @@
-// components/CourseGrid.jsx
-// This is now a SERVER component (no "use client").
-// It fetches real data from Supabase on the server
-// before the page is sent to the browser.
-
 import { supabase }  from "@/lib/supabase";
 import CourseCard    from "./CourseCard";
 import SkeletonCard  from "./SkeletonCard";

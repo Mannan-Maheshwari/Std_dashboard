@@ -10,8 +10,6 @@ export default function DashboardPage() {
       <Sidebar />
 
       <main className="flex-1 p-4 md:p-7 pb-24 md:pb-7 overflow-y-auto">
-
-        {/* Top bento row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div className="md:col-span-2">
             <HeroTile />
@@ -21,9 +19,7 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Course section */}
         <CourseGrid />
-
       </main>
 
       <MobileNav />
