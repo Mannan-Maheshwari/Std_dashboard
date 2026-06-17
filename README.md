@@ -19,3 +19,10 @@ A futuristic student learning dashboard built with Next.js App Router, Tailwind 
 - Spring physics on hover: `stiffness: 300, damping: 20`
 - Sidebar active pill uses `layoutId` for smooth positional animation
 - Progress bars animate from 0% to real value on mount
+
+### Data Fetching
+- Supabase is used
+- api called
+
+## Environment Variables
+See `.env.example` for required variables.
