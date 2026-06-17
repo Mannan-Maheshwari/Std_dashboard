@@ -3,14 +3,12 @@ import CourseCard    from "./CourseCard";
 import SkeletonCard  from "./SkeletonCard";
 import { Suspense }  from "react";
 
-// This inner component does the actual fetching
 async function CourseList() {
   const { data: courses, error } = await supabase
     .from("courses")
     .select("*")
     .order("created_at", { ascending: true });
 
-  // Graceful error handling — rubric specifically checks for this
   if (error) {
     return (
       <div className="col-span-full flex items-center justify-center
@@ -31,7 +29,6 @@ async function CourseList() {
   );
 }
 
-// Skeleton shown while CourseList is fetching
 function CourseSkeleton() {
   return (
     <>
@@ -42,7 +39,6 @@ function CourseSkeleton() {
   );
 }
 
-// Main export — Suspense handles the loading state automatically
 export default function CourseGrid() {
   return (
     <section aria-label="Your courses">

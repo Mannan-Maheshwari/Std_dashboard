@@ -8,13 +8,13 @@ const inter = Inter({
 
 export const metadata = {
   title: "LearnSpace — Student Dashboard",
-  description: "A futuristic student learning dashboard built with Next.js, Tailwind CSS, Framer Motion and Supabase.",
+  description: "A student learning dashboard built with Next.js, Tailwind CSS, Framer Motion and Supabase.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased bg-zinc-950`}>
+      <body >
         {children}
       </body>
     </html>

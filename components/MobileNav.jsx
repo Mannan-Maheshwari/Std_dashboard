@@ -1,4 +1,3 @@
-// components/MobileNav.jsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -27,14 +26,12 @@ export default function MobileNav() {
           <button
             key={item.label}
             onClick={() => setActive(item.label)}
-            className="relative flex flex-col items-center gap-1 px-4 py-1.5 rounded-xl"
-          >
+            className="relative flex flex-col items-center gap-1 px-4 py-1.5 rounded-xl">
             {isActive && (
               <motion.div
                 layoutId="mobile-pill"
                 className="absolute inset-0 bg-violet-600/20 rounded-xl"
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              />
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}/>
             )}
             <Icon size={20} className={isActive ? "text-violet-400" : "text-zinc-500"} />
             <span className={`text-[10px] font-medium ${isActive ? "text-violet-300" : "text-zinc-500"}`}>
